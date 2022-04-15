@@ -1,0 +1,50 @@
+:root {
+  --bg: rgb(18, 11, 36);
+  --bg-dark: rgb(10, 6, 20);
+  --txt: #fff;
+  --txt-pink: rgb(173, 2, 167);
+  --gold: rgb(239, 203, 44);
+ }
+.features-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5rem 8rem;
+}
+.features-menu-box {
+  display: flex;
+  background-color: var(--bg-dark);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.features-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.features-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+.features-menu-item:hover {
+  background-color: rgb(255, 166, 166);
+}
+.features-menu-item.active {
+  background-color: red;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.features-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 5rem;
+  width: 100%;
+  min-height: 100%;
+  background-color: red;
+}

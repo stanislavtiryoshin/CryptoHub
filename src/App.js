@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 
-import { Home } from './components/Navbar/pages/Home.js';
-import { Currencies } from './components/Navbar/pages/Currencies.js';
-import { Exchanges } from './components/Navbar/pages/Exchanges.js';
-import { News } from './components/Navbar/pages/News.js';
-import { Simulator } from './components/Navbar/pages/Simulator.js';
+import { Home } from './components/pages/Home.js';
+import { Currencies } from './components/pages/Currencies.js';
+import { Exchanges } from './components/pages/Exchanges.js';
+import { News } from './components/pages/News.js';
+import { Simulator } from './components/pages/Simulator.js';
 
 function App() {
   return (
