@@ -2,9 +2,11 @@
   --bg: rgb(18, 11, 36);
   --bg-dark: rgb(10, 6, 20);
   --txt: #fff;
+  --blue: rgb(123, 210, 213);
+  --dark-blue: #1e5688;
   --txt-pink: rgb(173, 2, 167);
   --gold: rgb(239, 203, 44);
- }
+}
 .features-box {
   display: flex;
   flex-direction: column;
@@ -30,10 +32,10 @@
   cursor: pointer;
 }
 .features-menu-item:hover {
-  background-color: rgb(255, 166, 166);
+  background-color: var(--blue);
 }
 .features-menu-item.active {
-  background-color: red;
+  background-color: var(--dark-blue);
 }
 h1 {
   text-align: center;
@@ -46,5 +48,5 @@ h1 {
   padding: 0 5rem;
   width: 100%;
   min-height: 100%;
-  background-color: red;
+  background-color: var(--dark-blue);
 }

@@ -1,13 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css';
+
 import Navbar from './components/Navbar/Navbar';
 
-import { Home } from './components/pages/Home.js';
-import { Currencies } from './components/pages/Currencies.js';
-import { Exchanges } from './components/pages/Exchanges.js';
-import { News } from './components/pages/News.js';
-import { Simulator } from './components/pages/Simulator.js';
+import { Home } from './pages/Home.jsx';
+import { Currencies } from './pages/Currencies.jsx';
+import { Exchanges } from './pages/Exchanges.jsx';
+import { News } from './pages/News.jsx';
+import { Simulator } from './pages/Simulator.jsx';
+
+import './App.css';
 
 function App() {
   return (
