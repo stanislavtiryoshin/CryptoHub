@@ -10,14 +10,14 @@ const baseUrl = 'https://coinpaprika1.p.rapidapi.com';
 const createRequest = (url) => ({ url, headers: cryptoApiHeaders })
 
 export const cryptoApi = createApi({
-  reduerPath: 'cryptoApi',
+  reducerPath: 'cryptoApi',
   baseQuery: fetchBaseQuery({baseUrl}),
   endpoints: (builder) => ({
     getGlobals: builder.query({
       query: () => createRequest('/global')
     }),
     getCryptosList: builder.query({
-      query: () => createRequest('/tickers')
+      query: (count) => createRequest(`/tickers?limit=${count}`)
     })
   })
 })

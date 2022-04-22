@@ -3,11 +3,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar/Navbar';
 
-import { Home } from './pages/Home.jsx';
-import { Currencies } from './pages/Currencies.jsx';
-import { Exchanges } from './pages/Exchanges.jsx';
-import { News } from './pages/News.jsx';
-import { Simulator } from './pages/Simulator.jsx';
+import { HomePage } from './pages/HomePage.jsx';
+import { CurrenciesPage } from './pages/CurrenciesPage.jsx';
+import { ExchangesPage } from './pages/ExchangesPage.jsx';
+import { NewsPage } from './pages/NewsPage.jsx';
+import { SimulatorPage } from './pages/SimulatorPage.jsx';
 
 import './App.css';
 
@@ -17,11 +17,11 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/currencies' element={<Currencies />} />
-          <Route path='/exchanges' element={<Exchanges />} />
-          <Route path='/news' element={<News />} />
-          <Route path='/simulator' element={<Simulator />} />
+          <Route path='/' element={<HomePage />} />
+          <Route path='/currencies' element={<CurrenciesPage />} />
+          <Route path='/exchanges' element={<ExchangesPage />} />
+          <Route path='/news' element={<NewsPage />} />
+          <Route path='/simulator' element={<SimulatorPage />} />
         </Routes>
       </Router>
     </div>
