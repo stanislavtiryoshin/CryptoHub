@@ -7,6 +7,9 @@
   --txt-pink: rgb(173, 2, 167);
   --gold: rgb(239, 203, 44);
 }
+.currencies-box {
+  margin-bottom: 5rem;
+}
 .crypto-card-box {
   padding: 0 5rem;
   display: grid;
@@ -28,8 +31,14 @@
 .crypto-card-heading {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #fff;
   margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+.crypto-card-heading img {
+  width: 2rem;
+  height: 2rem;
 }
 .crypto-card-heading font {
   color: var(--gold);
