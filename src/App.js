@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 
-import { HomePage } from './pages/HomePage.jsx';
-import { CurrenciesPage } from './pages/CurrenciesPage.jsx';
-import { ExchangesPage } from './pages/ExchangesPage.jsx';
-import { NewsPage } from './pages/NewsPage.jsx';
-import { SimulatorPage } from './pages/SimulatorPage.jsx';
+import HomePage from './pages/HomePage.jsx';
+import CurrenciesPage from './pages/CurrenciesPage.jsx';
+import ExchangesPage from './pages/ExchangesPage.jsx';
+import NewsPage from './pages/NewsPage.jsx';
+import SimulatorPage from './pages/SimulatorPage.jsx';
 import CryptoDetailsPage from './pages/CryptoDetailsPage.jsx'
 
 import './App.css';
