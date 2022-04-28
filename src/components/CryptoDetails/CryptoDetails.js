@@ -3,8 +3,19 @@ import { useParams } from 'react-router-dom'
 import millify from 'millify'
 import { Interweave } from 'interweave';
 
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
 import Loader from '../Loader/Loader'
 import LineChart from '../LineChart/LineChart';
+
 
 import { MoneyCollectOutlined, DollarCircleOutlined, FundOutlined, ExclamationCircleOutlined, StopOutlined, TrophyOutlined, CheckOutlined, NumberOutlined, ThunderboltOutlined } from '@ant-design/icons';
 
@@ -12,16 +23,25 @@ import { useGetCryptoHistoryQuery, useGetCryptoDetailsQuery } from '../../servic
 
 import './CryptoDetails.css'
 
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
 
 const CryptoDetails = () => {
   const { coinId } = useParams();
-  const [timeperiod, setTimeperiod] = useState('5y');
+  const [timeperiod, setTimeperiod] = useState('24h');
   const { data, isFetching } = useGetCryptoDetailsQuery(coinId);
   const { data: coinHistory } = useGetCryptoHistoryQuery({ coinId, timeperiod });
   const cryptoDetails = data?.data?.coin;
 
   if (isFetching) return <Loader />
-  console.log(coinHistory)
 
   const time = ['3h', '24h', '7d', '30d', '1y', '3m', '3y', '5y'];
 
