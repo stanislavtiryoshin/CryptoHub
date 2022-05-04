@@ -7,15 +7,32 @@
   --txt-pink: rgb(173, 2, 167);
   --gold: rgb(239, 203, 44);
 }
+.globals {
+  margin: 3rem 0 7rem;
+}
+.globals h2 {
+  text-align: center;
+  color: var(--gold);
+  margin-bottom: 3rem;
+  font-size: 42px;
+}
+#btc {
+  color: var(--gold)
+}
 .globals-box {
   width: 100%;
   padding: 0 5rem;
-  margin: 5rem 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   font-size: 18px;
 }
 .globals-box font {
   color: var(--txt-pink)
+}
+.globals-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }

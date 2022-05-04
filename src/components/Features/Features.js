@@ -20,7 +20,7 @@ const Features = () => {
 
   return (
     <div className="features-box">
-      <h1>
+      <h1 className='features-heading'>
           CryptoHub's Features
       </h1>
       <div className="features-menu-box">

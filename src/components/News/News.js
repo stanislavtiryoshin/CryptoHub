@@ -9,14 +9,12 @@ import './News.css'
 
 const News = ({ simplified }) => {
 
-  const count = simplified ? 6 : 13
+  const count = simplified ? 6 : 12
   const { data: cryptoNews, isFetching} = useGetCryptoNewsQuery(count)
 
   const demoImage = 'https://www.bing.com/th?id=OVFT.mpzuVZnv8dwIMRfQGPbOPC&pid=News'
 
   if (isFetching) return <Loader />
-
-  console.log(cryptoNews.value[0])
 
   return (
     <div className="crypto-news-box">

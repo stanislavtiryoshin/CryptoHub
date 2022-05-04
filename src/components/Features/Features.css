@@ -16,7 +16,6 @@
 .features-menu-box {
   display: flex;
   background-color: var(--bg-dark);
-  border-radius: 5px;
   overflow: hidden;
 }
 .features-menu {
@@ -37,16 +36,22 @@
 .features-menu-item.active {
   background-color: var(--dark-blue);
 }
-h1 {
+.features-heading {
   text-align: center;
   margin-bottom: 3rem;
+  color: var(--gold);
 }
 .features-item {
   display: flex;
   flex-direction: column;
+  justify-content: top;
+  padding: 3rem;
   gap: 1rem;
-  padding: 0 5rem;
   width: 100%;
   min-height: 100%;
   background-color: var(--dark-blue);
+}
+.features-item h1 {
+  text-align: center;
+  color: var(--blue)
 }
