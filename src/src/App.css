@@ -1,0 +1,58 @@
+:root {
+  --bg: rgb(18, 11, 36);
+  --bg-dark: rgb(10, 6, 20);
+  --txt: #fff;
+  --blue: rgb(123, 210, 213);
+  --dark-blue: #1e5688;
+  --txt-pink: rgb(173, 2, 167);
+  --gold: rgb(239, 203, 44);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  font-family: 'Space Mono';
+  background-color: var(--bg);
+  color: #fff;
+}
+.App {
+  overflow-x: hidden;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.cta-btn {
+  background-color: var(--blue);
+  font-family: 'Space Mono';
+  font-size: 1.3rem;
+  border: none;
+  padding: 0.5rem 1.7rem;
+}
+.cta-btn:hover {
+  color: var(--bg-dark);
+  background-color: #fff;
+}
+
+.home-title {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  color: var(--gold)
+}
+.home-title a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.home-title a:hover {
+  color:rgb(173, 2, 167);
+}
